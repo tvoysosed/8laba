@@ -50,13 +50,13 @@ int main()
 { 
 List list; 
 string str; 
-cin» str; 
+cin >> str; 
 Node *first= new Node {str, nullptr}; 
 list.head= first; 
 Node *last= nullptr; 
 while (true) 
    { 
-   cin» str; if (str=="end") break; 
+   cin >> str; if (str=="end") break; 
    Node *curr= new Node {str, nullptr}; 
    if (list.head->next==nullptr) list.head->next= curr; 
    if (last!=nullptr)
@@ -69,15 +69,15 @@ Node *curr= nullptr;
 curr=list.head; 
 do
    { 
-   cout« curr->str« endl; 
+   cout << curr->str << endl; 
    curr= curr->next; 
    } while (curr!=nullptr) ; 
 string filter; 
-cin» filter; 
+cin >> filter; 
 bool a = simple_print (list, filter); 
-cout « a « endl; 
+cout << a << endl; 
 string filter2; 
-cin» filter2; 
+cin >> filter2; 
 bool b= reg_print(list, filter2); 
-cout«b; 
+cout << b; 
 }
